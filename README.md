@@ -27,5 +27,3 @@ Once you've mastered these in OnBot Java, it's time to graduate to the big leagu
 3. Copy these `.java` files into `TeamCode/src/main/java/org/firstinspires/ftc/teamcode/`.
 4. Connect your laptop to the Control Hub using a USB-C cable (or Wi-Fi ADB).
 5. Click the big green **"Play"** button in Android Studio to build and push the code directly to the robot!
-# gigabite-n00bs
-# gigabite-n00bs
