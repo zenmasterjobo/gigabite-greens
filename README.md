@@ -11,6 +11,8 @@ Welcome! This repository has 3 basic steps to get your new robot moving.
 *   **OnBot Java:** A coding environment that lives right in your web browser! No software to install—just connect to the robot's Wi-Fi and write code.
 *   **FTC SDK:** The "Software Development Kit." It's the huge library of pre-written code provided by FIRST that lets you type `hardwareMap.get()` to easily talk to physical robot parts.
 
+![How-it-works](./how-it-works.jpg)
+
 ## 🚀 The Curriculum
 
 We have three files here to help you learn:
