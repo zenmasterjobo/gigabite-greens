@@ -9,8 +9,9 @@ public class Step3_CarSteering extends LinearOpMode {
 
     @Override
     public void runOpMode() {
-        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "left_drive");
-        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "right_drive");
+        // This robot has 4 drive motors (lf, lr, rf, rr) - we're just using the front two for now!
+        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "lf");
+        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "rf");
         rightMotor.setDirection(DcMotor.Direction.REVERSE);
 
         waitForStart();
@@ -42,4 +43,11 @@ public class Step3_CarSteering extends LinearOpMode {
             telemetry.update();
         }
     }
+
+    // BONUS CHALLENGE: This robot actually has 4 drive motors, not 2!
+    // The back-left is "lr" and the back-right is "rr" - they should move the
+    // same way as their front partners ("lf" and "rf") at all times.
+    // Try declaring lrMotor and rrMotor above like the other two, matching
+    // directions with their partner motor, and calling setPower() on them
+    // right alongside leftMotor/rightMotor. Does the robot drive better?
 }

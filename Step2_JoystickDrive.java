@@ -9,8 +9,9 @@ public class Step2_JoystickDrive extends LinearOpMode {
 
     @Override
     public void runOpMode() {
-        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "left_drive");
-        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "right_drive");
+        // This robot has 4 drive motors (lf, lr, rf, rr) - we're just using the front two for now!
+        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "lf");
+        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "rf");
         rightMotor.setDirection(DcMotor.Direction.REVERSE);
 
         telemetry.addData("Status", "Ready for Joysticks!");

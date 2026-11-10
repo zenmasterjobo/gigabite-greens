@@ -10,8 +10,9 @@ public class Step1_ButtonDrive extends LinearOpMode {
     @Override
     public void runOpMode() {
         // Connect to the motors on the robot using their configuration names
-        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "left_drive");
-        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "right_drive");
+        // This robot has 4 drive motors (lf, lr, rf, rr) - we're just using the front two for now!
+        DcMotor leftMotor = hardwareMap.get(DcMotor.class, "lf");
+        DcMotor rightMotor = hardwareMap.get(DcMotor.class, "rf");
 
         // The right motor needs to be reversed because it's mounted backwards on the chassis!
         rightMotor.setDirection(DcMotor.Direction.REVERSE);

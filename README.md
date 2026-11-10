@@ -19,7 +19,9 @@ We have three files here to help you learn:
 
 1.  **`Step1_ButtonDrive.java`** - The absolute basics. Push a button, motor turns on. Push another button, motor turns off. 
 2.  **`Step2_JoystickDrive.java`** - Connecting the analog joysticks to motor speeds. Half-push = half-speed!
-3.  **`Step3_CarSteering.java`** - The final challenge. How do we mix forward/backward with left/right turning? (You'll have to write some code here!)
+3.  **`Step3_CarSteering.java`** - The final challenge. How do we mix forward/backward with left/right turning? (You'll have to write some code here!) Once that works, there's a bonus challenge to bring the other two drive motors online.
+
+> **Note:** This robot's drivetrain actually has 4 motors (configured as `lf`, `lr`, `rf`, `rr`), not the classic 2-motor tank drive. Steps 1-3 only use the front two (`lf`/`rf`) to keep things simple while you learn - the bonus challenge at the end of Step 3 walks you through adding the back two.
 
 ## 💻 Moving to Android Studio (Bonus Step!)
 
